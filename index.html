@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ridwan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            color: #222;
+        }
+
+        nav {
+            background: #222;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .home {
+            background: white;
+            padding: 80px 10%;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .home img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .home h1 {
+            font-size: 40px;
+            margin: 10px 0;
+        }
+
+        .home p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        .tentang {
+            background: #e9e9e9;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 220px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .skill {
+            background: #222;
+            color: white;
+        }
+
+        .skill-list {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-list span {
+            border: 1px solid #aaa;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>Ridwan</h2>
+
+        <div>
+            <a href="#tentang">Tentang</a>
+            <a href="#pengalaman">Pengalaman</a>
+            <a href="#kemampuan">Kemampuan</a>
+        </div>
+    </nav>
+
+    <div class="home">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI2vIy6WbJN8xajwZJfqo964qZxORkI4zVv28BMIGRBNJB3ilwVrE8D5ux&s=10"
+
+        <div>
+            <p>Hallo, saya</p>
+            <h1>Ridwan saepulloh</h1>
+            <p>
+                Umur 17 tahun | Siswa SMK ICB Cinta Niaga
+            </p>
+        </div>
+    </div>
+
+    <section class="tentang" id="tentang">
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Hallo, nama saya Ridwan Saepulloh.
+            Saya berumur 17 tahun dan bersekolah di
+            SMK ICB Cinta Niaga. Saya tertarik dengan
+            dunia teknologi dan pembuatan website.
+        </p>
+    </section>
+
+    <section id="pengalaman">
+        <h2>Pengalaman</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>
+                    Membuat struktur dan halaman website
+                    menggunakan HTML.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>
+                    Membuat dan mengatur tampilan website
+                    menggunakan CSS.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="skill" id="kemampuan">
+        <h2>Kemampuan</h2>
+
+        <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Web Design</span>
+            <span>Editing</span>
+            <span>Kerja Sama</span>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
